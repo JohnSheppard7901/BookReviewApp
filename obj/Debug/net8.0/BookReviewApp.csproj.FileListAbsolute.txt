@@ -40,3 +40,4 @@ C:\Users\Aleks\IdeaProjects\BookReviewApp\bin\Debug\net8.0\BookReviewApp.runtime
 C:\Users\Aleks\IdeaProjects\BookReviewApp\bin\Debug\net8.0\BookReviewApp.pdb
 C:\Users\Aleks\IdeaProjects\BookReviewApp\obj\Debug\net8.0\BookReviewApp.genruntimeconfig.cache
 C:\Users\Aleks\IdeaProjects\BookReviewApp\obj\Debug\net8.0\ref\BookReviewApp.dll
+c:\Users\Aleks\IdeaProjects\BookReviewApp\obj\Debug\net8.0\BookReviewApp.sourcelink.json
