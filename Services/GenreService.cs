@@ -29,12 +29,46 @@ public class GenreService
             .ToListAsync();
     }
 
+    public async Task<GenreResponseDto?> GetAsync(Guid id)
+    {
+        return await _context.Genres
+            .Where(g => g.Id == id)
+            .ProjectTo<GenreResponseDto>(_mapper.ConfigurationProvider)
+            .FirstOrDefaultAsync();
+    }
+
     public async Task<GenreResponseDto> CreateAsync(GenreCreateDto createDto)
     {
         var genre = _mapper.Map<Genre>(createDto);
         await _context.Genres.AddAsync(genre);
+        await _context.SaveChangesAsync();
 
         return _mapper.Map<GenreResponseDto>(genre);
+    }
+
+    public async Task<GenreResponseDto?> UpdateAsync(Guid id, GenreUpdateDto dto)
+    {
+        var genre = await _context.Genres.FindAsync(id);
+
+        if(genre == null)
+            return null;
+
+        _mapper.Map(dto, genre);
+
+        await _context.SaveChangesAsync();
+
+        return _mapper.Map<GenreResponseDto>(genre);
+    }
+
+    public async Task DeleteAsync(Guid id)
+    {
+        var genre = await _context.Genres.FindAsync(id);
+
+        if(genre == null)
+            throw new KeyNotFoundException($"Genre with Id {id} not found.");
+
+        _context.Genres.Remove(genre);
+        await _context.SaveChangesAsync();
     }
 
 }

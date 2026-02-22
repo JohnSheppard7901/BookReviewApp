@@ -1,6 +1,5 @@
 using System;
 using BookReviewApp.Dtos.GenreDtos;
-using BookReviewApp.Models;
 using BookReviewApp.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,17 +23,46 @@ public class GenreController: ControllerBase
         return Ok(genres);
     }
 
-    [HttpGet]
-    public async Task<ActionResult<GenreResponseDto>> GetById()
+    [HttpGet("{id}")]
+    public async Task<ActionResult<GenreResponseDto>> GetById(Guid id)
     {
-        return null;
+        var genre = await _genreService.GetAsync(id);
+        if (genre == null)
+            return NotFound();
+
+        return Ok(genre);
     }
 
     [HttpPost]
     public async Task<ActionResult<GenreResponseDto>> Create([FromBody] GenreCreateDto dto)
     {
-        var createdDto = _genreService.CreateAsync(dto);
-        return CreatedAtAction(nameof(GetAll), new {id = createdDto.Id}, createdDto);
+        var createdDto = await _genreService.CreateAsync(dto);
+        // 201 Created
+        return CreatedAtAction(nameof(GetById), new {id = createdDto.Id}, createdDto);
+    }
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult<GenreResponseDto>> Update(Guid id, [FromBody] GenreUpdateDto updateDto)
+    {
+        var genre = await _genreService.UpdateAsync(id, updateDto);
+        if (genre == null)
+            return NotFound();
+
+        return Ok(genre);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult<GenreResponseDto>> Delete(Guid id)
+    {
+        try
+        {
+            await _genreService.DeleteAsync(id);
+            return NoContent();
+        }
+        catch (KeyNotFoundException)
+        {
+            return NotFound();
+        }
     }
 
 }

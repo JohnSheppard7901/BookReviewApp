@@ -1,11 +1,12 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BookReviewApp.Models;
 
 public class Book
 {
-    public Guid Id { get; private set; }
+    public Guid Id { get; private set; } = Guid.NewGuid();
 
     [Required]
     [StringLength(200)]
@@ -14,6 +15,9 @@ public class Book
     [Required]
     [StringLength(200)]
     public string Author { get; set; } = string.Empty;
+
+    [Column(TypeName = "text")]
+    public string Description { get; set; } = string.Empty;
 
     [Range(0, 2100)]
     public int ReleaseYear { get; set; }

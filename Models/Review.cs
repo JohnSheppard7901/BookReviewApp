@@ -5,7 +5,7 @@ namespace BookReviewApp.Models;
 
 public class Review
 {
-    public Guid Id { get; private set; }
+    public Guid Id { get; private set; } = Guid.NewGuid();
 
     [Range(1, 5)]
     public int Rating { get; set; }
