@@ -21,18 +21,21 @@ public class MappingProfile: Profile
         CreateMap<Book, BookResponseDto>()
             .ForMember(dest => dest.GenreDto, opt => opt.MapFrom(src => src.Genre));
         CreateMap<BookCreateDto, Book>();
-        CreateMap<BookUpdateDto, Book>();
+        CreateMap<BookUpdateDto, Book>()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
 
         // User
         CreateMap<User, UserResponseDto>()
             .ForMember(dest => dest.ReviewsDtos, opt => opt.MapFrom(src => src.Reviews));
         CreateMap<UserCreateDto, User>();
-        CreateMap<UserUpdateDto, User>();
+        CreateMap<UserUpdateDto, User>()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
 
         // Review
         CreateMap<Review, ReviewResponseDto>();
         CreateMap<ReviewCreateDto, Review>();
-        CreateMap<ReviewUpdateDto, Review>();
+        CreateMap<ReviewUpdateDto, Review>()
+            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
     }
 
 }

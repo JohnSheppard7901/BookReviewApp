@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj": {}
+    "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj": {
+    "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
+        "projectUniqueName": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
         "projectName": "BookReviewApp",
-        "projectPath": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
+        "projectPath": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
         "packagesPath": "C:\\Users\\Aleks\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\obj\\",
+        "outputPath": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aleks\\AppData\\Roaming\\NuGet\\NuGet.Config"

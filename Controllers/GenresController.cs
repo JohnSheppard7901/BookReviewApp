@@ -6,12 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace BookReviewApp.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
-public class GenreController: ControllerBase
+[Route("[controller]")]
+public class GenresController: ControllerBase
 {
     private readonly GenreService _genreService;
 
-    public GenreController(GenreService genreService)
+    public GenresController(GenreService genreService)
     {
         _genreService = genreService;
     }

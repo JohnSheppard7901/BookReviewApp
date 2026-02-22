@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HxTDO/dhRCQ=",
+  "dgSpecHash": "vxGmyFK2jyA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
+  "projectFilePath": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aleks\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Aleks\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -54,7 +54,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "\"BookReviewApp\" ist von \"Npgsql.EntityFrameworkCore.PostgreSQL (>= 8.0.5)\" abhängig, \"Npgsql.EntityFrameworkCore.PostgreSQL 8.0.5\" wurde jedoch nicht gefunden. Die ungefähre höchste Übereinstimmung von \"Npgsql.EntityFrameworkCore.PostgreSQL 8.0.8\" wurde aufgelöst.",
+      "message": "BookReviewApp depends on Npgsql.EntityFrameworkCore.PostgreSQL (>= 8.0.5) but Npgsql.EntityFrameworkCore.PostgreSQL 8.0.5 was not found. An approximate best match of Npgsql.EntityFrameworkCore.PostgreSQL 8.0.8 was resolved.",
       "libraryId": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "targetGraphs": [
         "net8.0"

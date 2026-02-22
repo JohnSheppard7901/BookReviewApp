@@ -13,6 +13,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<GenreService>();
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<ReviewService>();
+builder.Services.AddScoped<BookService>();
 
 var app = builder.Build();
 

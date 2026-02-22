@@ -2444,11 +2444,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
+      "projectUniqueName": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
       "projectName": "BookReviewApp",
-      "projectPath": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
+      "projectPath": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
       "packagesPath": "C:\\Users\\Aleks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\obj\\",
+      "outputPath": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aleks\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2533,7 +2533,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "\"BookReviewApp\" ist von \"Npgsql.EntityFrameworkCore.PostgreSQL (>= 8.0.5)\" abhängig, \"Npgsql.EntityFrameworkCore.PostgreSQL 8.0.5\" wurde jedoch nicht gefunden. Die ungefähre höchste Übereinstimmung von \"Npgsql.EntityFrameworkCore.PostgreSQL 8.0.8\" wurde aufgelöst.",
+      "message": "BookReviewApp depends on Npgsql.EntityFrameworkCore.PostgreSQL (>= 8.0.5) but Npgsql.EntityFrameworkCore.PostgreSQL 8.0.5 was not found. An approximate best match of Npgsql.EntityFrameworkCore.PostgreSQL 8.0.8 was resolved.",
       "libraryId": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "targetGraphs": [
         "net8.0"
