@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookReviewApp.Services;
 
-public class GenreService
+public class GenreService : IGenreService
 {
     private readonly AppDbContext _context;
     private readonly IMapper _mapper;

@@ -12,10 +12,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
-builder.Services.AddScoped<GenreService>();
-builder.Services.AddScoped<UserService>();
-builder.Services.AddScoped<ReviewService>();
-builder.Services.AddScoped<BookService>();
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<IGenreService, GenreService>();
+builder.Services.AddScoped<IReviewService, ReviewService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 

@@ -21,9 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ControllersMvc\" />
     <Folder Include="Dtos\BookDtos\" />
     <Folder Include="Dtos\ReviewDtos\" />
     <Folder Include="Mappings\" />
+    <Folder Include="Views\Books\" />
   </ItemGroup>
 
 </Project>

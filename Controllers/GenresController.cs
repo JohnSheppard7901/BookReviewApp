@@ -9,9 +9,9 @@ namespace BookReviewApp.Controllers;
 [Route("[controller]")]
 public class GenresController: ControllerBase
 {
-    private readonly GenreService _genreService;
+    private readonly IGenreService _genreService;
 
-    public GenresController(GenreService genreService)
+    public GenresController(IGenreService genreService)
     {
         _genreService = genreService;
     }

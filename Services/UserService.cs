@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookReviewApp.Services;
 
-public class UserService
+public class UserService : IUserService
 {
 
     private readonly AppDbContext _context;
