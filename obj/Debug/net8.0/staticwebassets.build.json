@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xfRZG8oLpZq+EYLmYu4Di3TUdkGTBc/3VijLdUtBWqE=",
+  "Hash": "ZzmK5m2+TrBimaNSSqrqmkUW21cxZgjglkCQfllj+rQ=",
   "Source": "BookReviewApp",
   "BasePath": "_content/BookReviewApp",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\wwwroot\\js\\usersManagement.js",
+      "SourceId": "BookReviewApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\wwwroot\\",
+      "BasePath": "_content/BookReviewApp",
+      "RelativePath": "js/usersManagement.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\usersManagement.js"
     },
     {
       "Identity": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",

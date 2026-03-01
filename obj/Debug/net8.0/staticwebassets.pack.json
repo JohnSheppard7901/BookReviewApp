@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\wwwroot\\js\\usersManagement.js",
+      "PackagePath": "staticwebassets\\js\\usersManagement.js"
+    },
+    {
       "Id": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
