@@ -2439,19 +2439,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aleks\\.nuget\\packages\\": {}
+    "/home/frey/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
+      "projectUniqueName": "/home/frey/Dokumente/Coding Projekte/BookReviewApp/BookReviewApp.csproj",
       "projectName": "BookReviewApp",
-      "projectPath": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
-      "packagesPath": "C:\\Users\\Aleks\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\obj\\",
+      "projectPath": "/home/frey/Dokumente/Coding Projekte/BookReviewApp/BookReviewApp.csproj",
+      "packagesPath": "/home/frey/.nuget/packages/",
+      "outputPath": "/home/frey/Dokumente/Coding Projekte/BookReviewApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Aleks\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/frey/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2524,7 +2524,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.418/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.418/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
