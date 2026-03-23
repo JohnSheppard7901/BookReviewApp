@@ -2444,11 +2444,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
+      "projectUniqueName": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
       "projectName": "BookReviewApp",
-      "projectPath": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
+      "projectPath": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
       "packagesPath": "C:\\Users\\Aleks\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\obj\\",
+      "outputPath": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aleks\\AppData\\Roaming\\NuGet\\NuGet.Config"

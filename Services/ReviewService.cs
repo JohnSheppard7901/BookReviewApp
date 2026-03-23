@@ -1,3 +1,4 @@
+using System;
 using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using BookReviewApp.Data;
@@ -67,6 +68,10 @@ public class ReviewService : IReviewService
 
     public async Task<IEnumerable<ReviewResponseDto>> GetByBookAsync(Guid bookId)
     {
+        var bookExists = await _context.Books.AnyAsync(b => b.Id == bookId);
+        if (!bookExists)
+            throw new KeyNotFoundException($"Book with Id {bookId} not found.");
+
         return await _context.Reviews
             .Where(r => r.BookId == bookId)
             .ProjectTo<ReviewResponseDto>(_mapper.ConfigurationProvider)
@@ -75,6 +80,10 @@ public class ReviewService : IReviewService
 
     public async Task<IEnumerable<ReviewResponseDto>> GetByUserAsync(Guid userId)
     {
+        var userExists = await _context.Users.AnyAsync(u => u.Id == userId);
+        if (!userExists)
+            throw new KeyNotFoundException($"User with Id {userId} not found.");
+
         return await _context.Reviews
             .Where(r => r.UserId == userId)
             .ProjectTo<ReviewResponseDto>(_mapper.ConfigurationProvider)

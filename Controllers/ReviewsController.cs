@@ -68,14 +68,30 @@ public class ReviewsController : ControllerBase
     [HttpGet("ByBook/{bookId}")]
     public async Task<ActionResult<IEnumerable<ReviewResponseDto>>> GetByBook(Guid bookId)
     {
-        var reviews = await _reviewService.GetByBookAsync(bookId);
-        return Ok(reviews);
+        try
+        {
+            var reviews = await _reviewService.GetByBookAsync(bookId);
+            return Ok(reviews);
+        }
+        catch (KeyNotFoundException)
+        {
+            return NotFound();
+        }
+        
     }
 
     [HttpGet("ByUser/{userId}")]
     public async Task<ActionResult<IEnumerable<ReviewResponseDto>>> GetByUser(Guid userId)
     {
-        var reviews = await _reviewService.GetByUserAsync(userId);
-        return Ok(reviews);
+        try
+        {
+            var reviews = await _reviewService.GetByUserAsync(userId);
+            return Ok(reviews);
+        }
+        catch (KeyNotFoundException)
+        {
+            return NotFound();
+        }
+        
     }
 }
