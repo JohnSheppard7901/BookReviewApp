@@ -33,38 +33,43 @@
                                 <button class="btn btn-sm btn-primary me-2" onclick="toggleEdit('@user.Id')">
                                     <i class="bi bi-pencil-square"></i> Edit
                                 </button>
-                                <form asp-action="DeleteConfirmed" asp-route-id="@user.Id" method="post"
-                                    style="display:inline;"
-                                    onsubmit="return confirm('Do you really want to delete this user? This action is not reversible!');">
-                                    <button type="submit" class="btn btn-danger btn-sm">
-                                        <i class="bi bi-trash"></i> Delete
-                                    </button>
-                                </form>
+                            
+                                <button 
+                                    type="submit" 
+                                    class="btn btn-danger btn-sm"
+                                    form="delete-form-@user.Id"
+                                    onclick="return confirm('Do you really want to delete this user? This action is not reversible!');">                                    
+                                    <i class="bi bi-trash"></i> Delete
+                                </button>
+                               
                             </td>
                         </tr>
 
                         <tr id="row-edit-@user.Id" style="display:none; background-color: #f8f9fa;">
-                            <form asp-action="UpdateUser" asp-route-id="@user.Id" method="post">
-                                <th scope="row">@index</th>
-                                <td>
-                                    <input type="text" name="Username" value="@user.Username" 
-                                        class="form-control form-control-sm"/>
-                                </td>
-                                <td>
-                                    <input type="email" name="Email" value="@user.Email" 
-                                        class="form-control form-control-sm"/>
-                                </td>
-                                <td>@(user.ReviewsDtos?.Count ?? 0)</td>
-                                <td class="text-center">
-                                    <button type="submit" class="btn btn-sm btn-success me-2">
-                                        <i class="bi bi-check-lg"></i> Save
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-secondary" onclick="toggleEdit('@user.Id')">
-                                        <i class="bi bi-x-lg"></i> Cancel
-                                    </button>
-                                </td>
-                            </form>
+                            
+                            <th scope="row">@index</th>
+                            <td>
+                                <input type="text" name="Username" value="@user.Username" 
+                                    class="form-control form-control-sm"
+                                    form="edit-form-@user.Id"/>
+                            </td>
+                            <td>
+                                <input type="email" name="Email" value="@user.Email" 
+                                    class="form-control form-control-sm"
+                                    form="edit-form-@user.Id"/>
+                            </td>
+                            <td>@(user.ReviewsDtos?.Count ?? 0)</td>
+                            <td class="text-center">
+                                <button type="submit" class="btn btn-sm btn-success me-2"
+                                    form="edit-form-@user.Id">
+                                    <i class="bi bi-check-lg"></i> Save
+                                </button>
+                                <button type="button" class="btn btn-sm btn-secondary" onclick="toggleEdit('@user.Id')">
+                                    <i class="bi bi-x-lg"></i> Cancel
+                                </button>
+                            </td>                           
                         </tr>
+
                         index++;
                     }
                 }
@@ -82,17 +87,20 @@
             @foreach (var user in Model)
             {
                 <form id="edit-form-@user.Id" 
-                    asp-action="Edit" 
+                    asp-action="UpdateUser" 
                     asp-route-id="@user.Id" 
                     method="post">
                 </form>
+                <form id="delete-form-@user.Id" 
+                    asp-action="DeleteConfirmed" 
+                    asp-route-id="@user.Id" 
+                    method="post" >
+                </form>
             }
         }
+
     </div>
 </div>
-
-<!-- Optional: Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 @section Scripts {
     <script src="~/js/usersManagement.js"></script>
