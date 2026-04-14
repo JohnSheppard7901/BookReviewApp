@@ -2439,27 +2439,19 @@
     ]
   },
   "packageFolders": {
-    "/home/frey/.nuget/packages/": {}
+    "C:\\Users\\Aleks\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
       "projectName": "BookReviewApp",
       "projectPath": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\BookReviewApp.csproj",
       "packagesPath": "C:\\Users\\Aleks\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\obj\\",
-=======
-      "projectUniqueName": "/home/frey/Dokumente/Coding Projekte/BookReviewApp/BookReviewApp.csproj",
-      "projectName": "BookReviewApp",
-      "projectPath": "/home/frey/Dokumente/Coding Projekte/BookReviewApp/BookReviewApp.csproj",
-      "packagesPath": "/home/frey/.nuget/packages/",
-      "outputPath": "/home/frey/Dokumente/Coding Projekte/BookReviewApp/obj/",
->>>>>>> 3a52b94cf9d65b3fa499b844daceeded40538dc7
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/frey/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Aleks\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2532,11 +2524,17 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.418/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.418/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Aleks\\IdeaProjects\\BookReviewApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1603",
       "level": "Warning",

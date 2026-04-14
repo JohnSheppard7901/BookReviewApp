@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Aleks\IdeaProjects\BookReviewApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Aleks/IdeaProjects/BookReviewApp/Views/BookMvc/BookDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va012Y1xCb29rRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Aleks/IdeaProjects/BookReviewApp/Views/BookMvc/BookOverview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va012Y1xCb29rT3ZlcnZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Aleks/IdeaProjects/BookReviewApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

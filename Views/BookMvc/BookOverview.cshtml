@@ -1,0 +1,64 @@
+﻿@model IEnumerable<BookReviewApp.Dtos.BookDtos.BookResponseDto>
+@{
+    ViewData["Title"] = "Home";
+}
+
+
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var book in Model)
+    {
+        <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <span class="badge bg-secondary mb-2">@book.GenreDto.Name</span>
+                <h5 class="card-title">@book.Title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">@book.Author · @book.ReleaseYear</h6>
+                <hr>
+                <p class="card-text">@book.Description</p>
+            </div>
+            <div class="card-footer">
+                <a asp-controller="BookMvc" asp-action="Details" asp-route-id="@book.Id" class="btn btn-sm btn-outline-primary">
+                    See details
+                </a>
+            </div>                
+          </div>
+        </div>
+    }
+</div>
+
+
+@section UnderNavBar {
+  <div id="bookSlogans" class="carousel slide mt-0 mb-5">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#bookSlogans" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#bookSlogans" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#bookSlogans" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#bookSlogans" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner bg-info text-center p-5">
+  
+      <div class="carousel-item active">
+        <p class="fw-bold fs-1"><i class="bi bi-book me-2"></i> Share your thoughts. Discover new worlds.</p>
+      </div>
+      <div class="carousel-item">
+        <p class="fw-bold fs-1"><i class="bi bi-book me-2"></i> Your next obsession starts here.</p>
+      </div>
+      <div class="carousel-item">
+        <p class="fw-bold fs-1"><i class="bi bi-book me-2"></i> Books aren’t escapes. They’re portals.</p>
+      </div>
+      <div class="carousel-item">
+        <p class="fw-bold fs-1"><i class="bi bi-book me-2"></i> Warning: may cause sleep deprivation.</p>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#bookSlogans" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bookSlogans" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+}
