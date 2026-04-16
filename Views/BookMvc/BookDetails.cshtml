@@ -1,5 +1,31 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model BookReviewApp.Dtos.BookDtos.BookResponseDto
 @{
+    ViewData["Title"] = "Details";
 }
+
+<div class="container mt-5 border shadow border-rounded p-5">
+
+    <div class="row mb-4">
+        <div class="col">
+            <span class="badge bg-secondary mb-2">Fantasy</span>
+            <h1 class="mb-1">@Model.Title</h1>
+            <p class="text-muted">@Model.Author · @Model.ReleaseYear</p>
+        </div>
+        <div class="col-auto">
+            <a href="#" class="btn btn-outline-secondary">← Return</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h5>Description</h5>
+            <p>@Model.Description</p>
+        </div>
+    </div>
+
+    <hr class="my-4">
+
+    <h5>Reviews</h5>
+    <p class="text-muted">Reviews folgen später.</p>
+
+</div>
